@@ -9,7 +9,7 @@
             background: #dabcaa;
             padding: 46px;
             width: 150px;
-            height: 665px;
+            height: 1000px;
             position: fixed;
             margin-left: 250px;
         }
@@ -34,7 +34,7 @@
             color: #fff;
             font-size: 20px;
         }
-        a{
+         header a{
             line-height: 3em;
             text-decoration: none;
             font-family: "Copperplate Gothic Bold";
@@ -46,15 +46,12 @@
         }
         a:link, a:visited{
             color: #f8eaf4;
-
-
         }
         .copyright{
             color: #fff;
             line-height: 2em;
             font-size: 17px;
             text-align: center;
-
         }
     </style>
     <!--  Стиль шапки слева. Конец.  -->
@@ -64,6 +61,7 @@
             background-color: #ffffff;
             margin-left: 492px;
             width: 750px;
+            height: 667px;
             height: 100%;
             border: #1a1a1a;
         }
@@ -87,25 +85,28 @@
             font-size: 14px;
             font-family: "Franklin Gothic Book";
         }
-        .school{
-            display: inline-flex;
-            width: 135px;
-            height: 240px;
-            margin-top: 20px;
+        .education span{
+            padding: 0px 60px 15px 70px;
+            font-family: "Franklin Gothic Book";
+            font-weight: 300;
+            color: #79748c;
         }
-        .education {
-            flex-direction: column;
+        p{
+            padding: 0px 60px 15px 70px;
+            font-family: "Franklin Gothic Book";
+            color: #1a1a1a;
+        }
+        .contacts span{
+            padding: 0px 60px 15px 70px;
+            display: flex;
+            flex-direction: row;
+            font-weight: 600;
+            color: #1a1a1a;
+            font-size: 20px;
         }
     </style>
-
-
-
-
-
-
 </head>
 <body style="margin-top: 0px" bgcolor="#B56A4A">
-
 </div>
 <!--Шапка фиксированная-->
 <header class="left_fixed">
@@ -113,19 +114,19 @@
     <h1 class="name" style="margin-left: 0px; margin-bottom: 5px">Байкучуков Ян</h1>
     <span style="padding-left: 0px" >Web-разработчик</span>
     <div style="margin-top: 30px;">
-        <a href="#about_me">Обо мне</a>
+        <a href="#">Обо мне</a>
     </div>
     <div>
-        <a href="#">Образование</a>
+        <a href="#education">Образование</a>
     </div>
     <div>
-        <a href="#">Навыки</a>
+        <a href="#skills">Навыки</a>
     </div>
     <div>
-        <a href="#">Достижения</a>
+        <a href="#achievements">Достижения</a>
     </div>
     <div style="margin-right: 80px">
-        <a href="#">Контакты</a>
+        <a href="#contacts">Контакты</a>
     </div>
     <footer style="margin-top: 75px" class="copyright">Bishkek, Kyrgyzstan <br>
                                      ©Copyright, 2021
@@ -137,7 +138,7 @@
 <main class="main">
     <h2> Обо мне
     </h2>
-    <div class="about_me" style="border-bottom: solid 1px #EEE;">
+    <div class="about_me" id="about_me" style="border-bottom: solid 1px #EEE;">
         <ul class="info">
             <li><strong>ФИО:</strong>
                 Байкучуков Ян Русланович</li>
@@ -154,15 +155,85 @@
             +996 702 115 019</li>
         </ul>
     </div>
-    <div class="education">
-        <h2> Образование
-            <img src="images/refal.jpg" alt="Фото" class="school" style="margin-top: 45px;
-            margin-left: 0px">
-            <img src="images/graduation.jpg" alt="Фото" class="school">
-            
+    <div class="education" id="education"  style="border-bottom: solid 1px #EEE;">
+        <h2 style="margin-top: 0"> Образование
         </h2>
-
+        <h2 style="color: #1a1a1a; flex-direction: column; display: flex;
+        padding-top: 0px; padding-bottom: 0px">ЧШ УВК "РЕФАЛ"</h2>
+        <span>Отличник 9 лет | 2011 - 2020 </span>
+        <p>
+            Обучался в УВК "Рефал" с 1 по 9 классы. Каждый учебный год заканчивал на отлично. <br>
+            Преуспевал особенно в предметах, связанных с языками и точными наукаими. <br>
+            Со всеми контактировал хорошо.
+        </p>
+        <h2 style="color: #1a1a1a; flex-direction: column; display: flex;
+        padding-top: 0px; padding-bottom: 0px">Колледж "Таалим" </h2>
+        <span>1 курс | 2021-2023 </span>
+        <p>
+            На данный момент обучаюсь в колледже "Таалим" при Международном Университете Кыргызстана. <br>
+            Учусь также на отлично. <br>
+            Поступил на специальность "Программирование в компьютерных системах".
+        </p>
+        <h2 style="color: #1a1a1a; flex-direction: column; display: flex;
+        padding-top: 0px; padding-bottom: 0px"> Курсы "OneClick" </h2>
+        <span>  Обучение на программиста | 09.2020 - 04. 2021</span>
+        <p> Параллельно с учебой прохожу курсы по web-разработке. <br>
+        Материал дается хорошо и понятно. Усваиваю новое и после окончании курсов, <br>
+        хочу научиться создавать сайты и приложения. </p>
+    </div>
+    <div class="skills" id="skills"  style="border-bottom: solid 1px #EEE;">
+        <h2 style="margin-top: 0"> Навыки </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, rem! <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Beatae deleniti eos eveniet maxime omnis velit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Accusamus aliquam, culpa deleniti est iusto nihil non officia officiis quisquam tempore.<br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, rem! <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Beatae deleniti eos eveniet maxime omnis velit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Accusamus aliquam, culpa deleniti est iusto nihil non officia officiis quisquam tempore.<br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, rem! <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Beatae deleniti eos eveniet maxime omnis velit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Accusamus aliquam, culpa deleniti est iusto nihil non officia officiis quisquam tempore.<br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, rem! <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Beatae deleniti eos eveniet maxime omnis velit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Accusamus aliquam, culpa deleniti est iusto nihil non officia officiis quisquam tempore.<br></p>
+    </div>
+    <div class="achievements" id="achievements" style="border-bottom: solid 1px #EEE;">
+        <h2 style="margin-top: 0"> Достижения </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, rem! <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Beatae deleniti eos eveniet maxime omnis velit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Accusamus aliquam, culpa deleniti est iusto nihil non officia officiis quisquam tempore.<br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, rem! <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Beatae deleniti eos eveniet maxime omnis velit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Accusamus aliquam, culpa deleniti est iusto nihil non officia officiis quisquam tempore.<br>
+            orem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, rem! <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Beatae deleniti eos eveniet maxime omnis velit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Accusamus aliquam, culpa deleniti est iusto nihil non officia officiis quisquam tempore.<br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, rem! <br>
+        </p>
+    </div>
+    <div class="contacts" id="contacts"  style="border-bottom: solid 1px #EEE;">
+        <h2 style="margin-top: 0">Контакты</h2>
+        <span> Instagram: </span>
+        <a href="https://www.instagram.com/ian.baika/" style="  padding: 0px 60px 15px 70px;
+            display: flex;
+            flex-direction: row;
+            font-weight: 300;
+            color: #1a1a1a;
+            font-size: 20px;"> @ianbaika </a>
     </div>
 </main>
-
 </body>
+</html>
